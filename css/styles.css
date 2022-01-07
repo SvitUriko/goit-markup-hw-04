@@ -132,10 +132,17 @@ img {
   display: flex;
   margin-left: auto;
 }
+.header-contacts-item {
+  display: flex;
+  align-items: center;
+  height: 16px;
+}
 .header-contacts-item:not(:last-child) {
   margin-right: 30px;
 }
-.header-contacts .link {
+.header-contacts-link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -145,14 +152,9 @@ img {
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
-.header-contacts .link:hover,
-.header-contacts .link:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--accent-color);
-}
-.header-contacts-item {
-  display: flex;
-  align-items: center;
-  height: 16px;
 }
 .contacts-icon {
   margin-right: 10px;
@@ -160,18 +162,10 @@ img {
 
 /*Icon header*/
 .icon.mail {
-  fill: var(--primary-text-color);
-}
-.icon.mail:hover,
-.icon.mail:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 .icon.tel {
-  fill: var(--primary-text-color);
-}
-.icon.tel:hover,
-.icon.tel:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 /*Hero*/
@@ -183,7 +177,6 @@ img {
   text-align: center;
 
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
